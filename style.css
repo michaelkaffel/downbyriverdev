@@ -2,25 +2,27 @@
    DESIGN TOKENS
    ============================================ */
 :root {
-  --tc:        #CF8B68;
-  --tc-lt:     #FAECE7;
-  --tc-dk:     #712B13;
-  --rb:        #658C9F;
-  --black:     #1a1a1a;
-  --gray-mid:  #555;
-  --gray-lt:   #888;
-  --border:    #e5e5e5;
-  --surface:   #f7f5f2;
-  --white:     #ffffff;
-  --green-lt:  #EAF3DE;
-  --green-dk:  #3B6D11;
+  --tc: #CF8B68;
+  --tc-lt: #FAECE7;
+  --tc-dk: #712B13;
+  --rb: #658C9F;
+  --black: #1a1a1a;
+  --gray-mid: #555;
+  --gray-lt: #888;
+  --border: #e5e5e5;
+  --surface: #f7f5f2;
+  --white: #ffffff;
+  --green-lt: #EAF3DE;
+  --green-dk: #3B6D11;
   --green-txt: #27500A;
 }
 
 /* ============================================
    RESET & BASE
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -48,7 +50,8 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -81,12 +84,30 @@ ul, ol {
   font-family: inherit;
 }
 
-.btn:hover { opacity: 0.82; }
+.btn:hover {
+  opacity: 0.82;
+}
 
-.btn-primary   { background: var(--tc); color: white; }
-.btn-secondary { background: transparent; color: var(--gray-mid); border: 0.5px solid #ccc; }
-.btn-sm        { padding: 7px 18px; }
-.btn-block     { display: block; width: 100%; text-align: center; }
+.btn-primary {
+  background: var(--tc);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gray-mid);
+  border: 0.5px solid #ccc;
+}
+
+.btn-sm {
+  padding: 7px 18px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
 /* ============================================
    NAV
@@ -135,7 +156,9 @@ ul, ol {
   transition: color 0.15s;
 }
 
-.nav-links a:not(.btn):hover { color: var(--black); }
+.nav-links a:not(.btn):hover {
+  color: var(--black);
+}
 
 /* ============================================
    HERO
@@ -280,7 +303,10 @@ ul, ol {
   margin-top: 3px;
 }
 
-.wix-body { flex: 1; min-width: 0; }
+.wix-body {
+  flex: 1;
+  min-width: 0;
+}
 
 .wix-lede {
   font-size: 13px;
@@ -303,7 +329,9 @@ ul, ol {
   margin-bottom: 3px;
 }
 
-.wix-col-label em { font-style: normal; }
+.wix-col-label em {
+  font-style: normal;
+}
 
 .wix-col-cost {
   font-size: 16px;
@@ -313,7 +341,9 @@ ul, ol {
   font-family: Georgia, serif;
 }
 
-.wix-col-right .wix-col-cost { color: var(--green-dk); }
+.wix-col-right .wix-col-cost {
+  color: var(--green-dk);
+}
 
 .wix-col-list li {
   font-size: 11px;
@@ -350,15 +380,21 @@ ul, ol {
     flex-direction: column;
     align-items: center;
   }
+
   .wix-icon {
     margin-top: 0;
   }
+
+  
+}
+
+@media (max-width: 500px) {
   .wix-compare {
     flex-direction: column;
     gap: 16px;
   }
   .wix-vs {
-    text-align: center;
+    text-align: start;
     align-self: auto;
   }
 }
@@ -392,14 +428,45 @@ ul, ol {
   align-self: flex-start;
 }
 
-.badge-t1 { background: var(--green-lt); color: var(--green-txt); }
-.badge-t2 { background: var(--green-dk); color: var(--green-lt); }
-.badge-t3 { background: var(--black);    color: #f0f0f0; }
+.badge-t1 {
+  background: var(--green-lt);
+  color: var(--green-txt);
+}
 
-.tier-name  { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
-.tier-ideal { font-size: 11px; color: var(--gray-lt); margin-bottom: 10px; line-height: 1.5; }
-.tier-price { font-size: 21px; font-weight: 500; margin-bottom: 2px; }
-.tier-time  { font-size: 11px; color: var(--gray-lt); margin-bottom: 10px; }
+.badge-t2 {
+  background: var(--green-dk);
+  color: var(--green-lt);
+}
+
+.badge-t3 {
+  background: var(--black);
+  color: #f0f0f0;
+}
+
+.tier-name {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.tier-ideal {
+  font-size: 11px;
+  color: var(--gray-lt);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.tier-price {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.tier-time {
+  font-size: 11px;
+  color: var(--gray-lt);
+  margin-bottom: 10px;
+}
 
 .tier-divider {
   border: none;
@@ -407,7 +474,9 @@ ul, ol {
   margin: 8px 0;
 }
 
-.tier-list { flex: 1; }
+.tier-list {
+  flex: 1;
+}
 
 .tier-list li {
   display: flex;
@@ -450,14 +519,36 @@ ul, ol {
   margin-bottom: 14px;
 }
 
-.retainer-title { font-size: 15px; font-weight: 500; margin-bottom: 3px; }
-.retainer-sub   { font-size: 11px; color: var(--gray-lt); font-style: italic; }
+.retainer-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
 
-.retainer-price-block { text-align: right; }
+.retainer-sub {
+  font-size: 11px;
+  color: var(--gray-lt);
+  font-style: italic;
+}
 
-.retainer-price { font-size: 20px; font-weight: 500; }
-.retainer-price span { font-size: 13px; font-weight: 400; }
-.retainer-price-sub { font-size: 11px; color: var(--gray-lt); }
+.retainer-price-block {
+  text-align: right;
+}
+
+.retainer-price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.retainer-price span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.retainer-price-sub {
+  font-size: 11px;
+  color: var(--gray-lt);
+}
 
 .retainer-list {
   display: grid;
@@ -491,13 +582,16 @@ ul, ol {
   color: var(--gray-lt);
 }
 
-.info-note span { color: var(--tc); flex-shrink: 0; }
+.info-note span {
+  color: var(--tc);
+  flex-shrink: 0;
+}
 
 /* ============================================
    ABOUT
    ============================================ */
 .grey-background {
-    background: var(--surface);
+  background: var(--surface);
 }
 
 .about-grid {
@@ -510,9 +604,17 @@ ul, ol {
   row-gap: 16px;
 }
 
-.about-photo { grid-area: photo; }
-.about-h2    { grid-area: h2; }
-.about-text  { grid-area: text; }
+.about-photo {
+  grid-area: photo;
+}
+
+.about-h2 {
+  grid-area: h2;
+}
+
+.about-text {
+  grid-area: text;
+}
 
 .about-photo {
   width: 90px;
@@ -567,7 +669,9 @@ blockquote {
   margin-top: 6px;
 }
 
-.portfolio-link:hover { text-decoration: underline; }
+.portfolio-link:hover {
+  text-decoration: underline;
+}
 
 /* ============================================
    CONTACT
@@ -641,7 +745,9 @@ blockquote {
   margin-bottom: 20px;
 }
 
-.cta-block .btn { margin-bottom: 16px; }
+.cta-block .btn {
+  margin-bottom: 16px;
+}
 
 .divider-row {
   display: flex;
@@ -650,9 +756,17 @@ blockquote {
   margin-bottom: 16px;
 }
 
-.divider-line { flex: 1; height: 0.5px; background: var(--border); }
+.divider-line {
+  flex: 1;
+  height: 0.5px;
+  background: var(--border);
+}
 
-.divider-row span { font-size: 11px; color: #999; white-space: nowrap; }
+.divider-row span {
+  font-size: 11px;
+  color: #999;
+  white-space: nowrap;
+}
 
 .email-link {
   display: inline-flex;
@@ -662,7 +776,9 @@ blockquote {
   color: var(--rb);
 }
 
-.email-link:hover { text-decoration: underline; }
+.email-link:hover {
+  text-decoration: underline;
+}
 
 /* ============================================
    FOOTER
@@ -680,31 +796,43 @@ footer .inner {
   padding-bottom: 20px;
 }
 
-.footer-name { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
-.footer-sub  { font-size: 11px; color: var(--gray-lt); }
-.footer-copy { font-size: 11px; color: #aaa; }
+.footer-name {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.footer-sub {
+  font-size: 11px;
+  color: var(--gray-lt);
+}
+
+.footer-copy {
+  font-size: 11px;
+  color: #aaa;
+}
 
 /* ============================================
    HAMBURGER — hidden on desktop
    ============================================ */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
 }
 
 .hamburger span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: var(--black);
-    border-radius: 2px;
-    transform: transform 0.2s, opacity 0.2s;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--black);
+  border-radius: 2px;
+  transform: transform 0.2s, opacity 0.2s;
 }
 
 /* ============================================
@@ -713,7 +841,9 @@ footer .inner {
 @media (max-width: 640px) {
 
   /* Nav — hamburger */
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+  }
 
   .nav-links {
     display: none;
@@ -729,7 +859,9 @@ footer .inner {
     padding: 8px 20px 16px;
   }
 
-  .nav-links.nav-open { display: flex; }
+  .nav-links.nav-open {
+    display: flex;
+  }
 
   .nav-links a:not(.btn) {
     padding: 10px 0;
