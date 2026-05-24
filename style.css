@@ -414,6 +414,10 @@ ul, ol {
 /* ============================================
    ABOUT
    ============================================ */
+.grey-background {
+    background: var(--surface);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 90px 1fr;
