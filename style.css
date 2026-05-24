@@ -273,7 +273,12 @@ ul, ol {
   align-items: flex-start;
 }
 
-.wix-icon { font-size: 18px; flex-shrink: 0; margin-top: 3px; }
+.wix-icon {
+  width: 28px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
 
 .wix-body { flex: 1; min-width: 0; }
 
@@ -341,6 +346,13 @@ ul, ol {
 
 /* Mobile: stack the comparison columns */
 @media (max-width: 600px) {
+  .wix-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wix-icon {
+    margin-top: 0;
+  }
   .wix-compare {
     flex-direction: column;
     gap: 16px;
