@@ -266,19 +266,89 @@ ul, ol {
   background: #fef3eb;
   border: 0.5px solid var(--tc);
   border-radius: 10px;
-  padding: 14px 18px;
+  padding: 16px 18px;
   margin-bottom: 28px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
 }
 
-.wix-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.wix-icon { font-size: 18px; flex-shrink: 0; margin-top: 3px; }
 
-.wix-bar p {
+.wix-body { flex: 1; min-width: 0; }
+
+.wix-lede {
   font-size: 13px;
   color: var(--tc-dk);
   line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.wix-compare {
+  display: flex;
+  gap: 15vw;
+  justify-content: flex-start;
+}
+
+.wix-col-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-lt);
+  margin-bottom: 3px;
+}
+
+.wix-col-label em { font-style: normal; }
+
+.wix-col-cost {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tc-dk);
+  margin-bottom: 8px;
+  font-family: Georgia, serif;
+}
+
+.wix-col-right .wix-col-cost { color: var(--green-dk); }
+
+.wix-col-list li {
+  font-size: 11px;
+  color: var(--tc-dk);
+  line-height: 1.5;
+  margin-bottom: 3px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.wix-col-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gray-lt);
+}
+
+.wix-col-right .wix-col-list li::before {
+  content: '✓';
+  color: var(--green-dk);
+}
+
+.wix-vs {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-lt);
+  letter-spacing: 0.05em;
+  align-self: center;
+}
+
+/* Mobile: stack the comparison columns */
+@media (max-width: 600px) {
+  .wix-compare {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .wix-vs {
+    text-align: center;
+    align-self: auto;
+  }
 }
 
 /* Tier grid */
