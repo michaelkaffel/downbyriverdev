@@ -207,7 +207,7 @@ ol {
   color: var(--gray-mid);
   line-height: 1.7;
   margin: 0 auto 32px;
-  max-width: 400px;
+  max-width: 425px;
 }
 
 .hero-ctas {
@@ -416,6 +416,15 @@ ol {
   flex-direction: column;
 }
 
+.tier-footnote {
+  font-size: 11px;
+  color: var(--green-txt);
+  background: var(--green-lt);
+  margin-top: 10px;
+  line-height: 1.5;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
 
 
 /* Badges */
