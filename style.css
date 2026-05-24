@@ -928,3 +928,17 @@ footer .inner {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 490px) {
+  .wix-compare {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .retainer-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .retainer-price-block {
+    text-align: left;
+  }
+}
