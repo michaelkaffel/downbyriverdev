@@ -315,6 +315,13 @@ ol {
     margin-bottom: 14px;
 }
 
+.wix-close {
+    font-size: 13px;
+    color: var(--tc-dk);
+    line-height: 1.6;
+    margin-top: 14px;
+}
+
 .wix-compare {
     display: flex;
     gap: 15vw;
