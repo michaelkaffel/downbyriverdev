@@ -109,6 +109,10 @@ ol {
     text-align: center;
 }
 
+.admin-btn {
+    margin-top: 15px;
+}
+
 /* ============================================
    NAV
    ============================================ */
@@ -429,6 +433,7 @@ ol {
     color: var(--green-txt);
     background: var(--green-lt);
     margin-top: 10px;
+    margin-bottom: 10px;
     line-height: 1.5;
     padding: 6px 10px;
     border-radius: 6px;
