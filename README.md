@@ -1,4 +1,4 @@
-# Down By The River Dev
+# Down By The River Development
 
 Freelance web development site for **Down By The River Development** — a sole proprietorship by Michael Kaffel targeting small local businesses.
 
