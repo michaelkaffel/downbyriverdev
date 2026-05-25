@@ -46,7 +46,7 @@ Headlines: Georgia serif · Body: system-ui · Mobile breakpoint: 640px
 
 ## Local development
 
-No install required. Open with any static server:
+No install required. Open with any static server
 
 ---
 
