@@ -19,6 +19,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
+    <link rel="preload" as="image" href="/assets/hero-image.webp" fetchpriority="high">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -28,7 +30,10 @@
     <nav id="nav">
         <div class="inner">
             <div class="nav-logo-block">
-                <img src="/assets/logo-transparent.png" width="50" alt="Down By The River Dev logo" />
+                <picture>
+                    <source srcset="/assets/logo-transparent.webp" type="image/webp">
+                    <img src="/assets/logo-transparent.png" width="50" alt="Down By The River Dev logo" />
+                </picture>
                 <span class="nav-logo">Down By The River Dev</span>
             </div>
             <button class="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -59,7 +64,10 @@
             </div>
         </div>
         <div class="logo-stage">
-            <img src="/assets/hero-image.png" alt="Down By The River Dev" class="hero-img" width="1440" height="600" />
+            <picture>
+                <source srcset="/assets/hero-image.webp" type="image/webp">
+                <img src="/assets/hero-image.png" alt="Down By The River Dev" class="hero-img" height="600" />
+            </picture>
         </div>
     </section>
 
@@ -77,7 +85,11 @@
             </p>
 
             <div class="wix-bar">
-                <img src="/assets/lightbulb.png" alt="" class="wix-icon" width="28" height="29" aria-hidden="true" />
+                <picture>
+                    <source srcset="/assets/lightbulb.webp" type="image/webp">
+                    <img src="/assets/lightbulb.png" alt="" class="wix-icon" width="28" height="29"
+                        aria-hidden="true" />
+                </picture>
                 <div class="wix-body">
                     <p class="wix-lede"><strong>Three years of platform fees adds up to $600-$1,500+ and you still owe
                             next year <em>while doing all the work yourself</em>.</strong> A custom Tier 1 can be less
@@ -103,7 +115,8 @@
                             </ul>
                         </div>
                     </div>
-                     <p class="wix-close"><strong>Already have a site?</strong> Ask about moving platforms or a simple takeover.</p>
+                    <p class="wix-close"><strong>Already have a site?</strong> Ask about moving platforms or a simple
+                        takeover.</p>
                 </div>
             </div>
 
@@ -206,15 +219,20 @@
             </div>
             <div class="about-grid">
                 <div class="about-photo">
-                    <img src="/assets/headshot.jpg" alt="Michael Kaffel" width="90" height="110" loading="lazy" />
+                    <picture>
+                        <source srcset="/assets/headshot.webp" type="image/webp">
+                        <img src="/assets/headshot.jpg" alt="Michael Kaffel" width="90" height="110" loading="lazy" />
+                    </picture>
                 </div>
                 <h2 class="about-h2">Hi, I'm Michael —<br />the whole team.</h2>
                 <div class="about-text">
-                    <p>Down By The River Dev is just me, a developer based in Port Angeles who 
-                        builds websites for small businesses and manages them after launch. No 
+                    <p>Down By The River Dev is just me, a developer based in Port Angeles who
+                        builds websites for small businesses and manages them after launch. No
                         account managers, no AI customer service, no wondering who to call when
                         something breaks. You get my number.</p>
-                    <p>My background is in QA and web management — finding what's broken before anyone else does and keeping sites running after launch. That's how I approach every build: clean code, tested across devices, and launched only when it's ready.
+                    <p>My background is in QA and web management — finding what's broken before anyone else does and
+                        keeping sites running after launch. That's how I approach every build: clean code, tested across
+                        devices, and launched only when it's ready.
                     </p>
                     <blockquote>
                         Most people dread dealing with their website. It doesn't have to be that way.
@@ -273,7 +291,8 @@
         <div class="inner">
             <div class="footer-left">
                 <p class="footer-name">Down By The River Dev</p>
-                <p class="footer-sub"><a href="https://michaelkaffel.com" target="_blank" rel="noreferrer" class="footer-portfolio-link">Michael Kaffel</a> · Port Angeles, WA</p>
+                <p class="footer-sub"><a href="https://michaelkaffel.com" target="_blank" rel="noreferrer"
+                        class="footer-portfolio-link">Michael Kaffel</a> · Port Angeles, WA</p>
             </div>
             <p class="footer-copy">© 2026 Down By The River Development</p>
         </div>
